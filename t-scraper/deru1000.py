@@ -84,6 +84,9 @@ def abc_deru1000():
             writer = csv.writer(f, dialect='excel', delimiter='\t', quoting=csv.QUOTE_ALL)
             writer.writerow([i, title, category, question, option_a, option_b, option_c, option_d, answer, img_url])
 
+        # urllib.request.urlretrieve(img_url,
+        #                            "./img/deru1000/" + str(i) + ".png")
+
         print("No.", i)
         print("TITLE", title)
         print("CATEGORY", category)
